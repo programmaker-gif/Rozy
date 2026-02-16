@@ -1,79 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مفاجأة خاصة 💖</title>
-    <!-- مكتبة canvas-confetti للألعاب النارية -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="container">
-        <!-- صفحة الدخول -->
-        <div id="login-screen">
-            <!-- Decorative Hearts -->
-            <div class="decor-heart" style="top: 10%; left: 10%; animation-delay: 0s;">❤️</div>
-            <div class="decor-heart" style="top: 20%; right: 15%; animation-delay: 1s;">💖</div>
-            <div class="decor-heart" style="top: 70%; left: 20%; animation-delay: 2s;">💕</div>
-            
-            <div class="login-content" id="login-box">
-                <h1 class="title">مرحباً يا حلوة 🌸</h1>
-                
-                <div class="input-group">
-                    <label>من صاحبة عيد الميلاد؟</label>
-                    <input type="text" id="nameInput" placeholder="اكتبي الاسم هنا...">
-                </div>
-
-                <div class="input-group">
-                    <label>تاريخ ميلادها</label>
-                    <input type="text" id="dateInput" placeholder="😅❤️🤦‍♂️">
-                </div>
-
-                <button class="btn-open" onclick="checkAnswers()">افتح الهدية 💝</button>
-                
-                <div class="error-message" id="errorMsg">
-                    أنتِ لستِ صاحبة عيد الميلاد! 😠
-                    <br>
-                    <small>لا تقتربي من هنا مرة أخرى</small>
-                </div>
-            </div>
-
-            <!-- Simple SVG Car Representation (Mercedes-ish Silhouette) -->
-            <div class="car-container">
-                <!-- Simple car side view SVG -->
-                <svg viewBox="0 0 100 50" width="100%" height="100%">
-                    <g fill="#A0A0A0" stroke="#333" stroke-width="1">
-                        <!-- Body -->
-                        <path d="M10,35 L90,35 L85,25 L70,15 L30,15 L15,25 Z" fill="silver" />
-                        <!-- Wheels -->
-                        <circle cx="25" cy="35" r="7" fill="#333" />
-                        <circle cx="75" cy="35" r="7" fill="#333" />
-                        <circle cx="25" cy="35" r="3" fill="#DDD" />
-                        <circle cx="75" cy="35" r="3" fill="#DDD" />
-                    </g>
-                     <!-- "Mercedes" Star Emblem Hint -->
-                    <circle cx="15" cy="27" r="2.5" fill="none" stroke="#666" stroke-width="0.5" />
-                    <path d="M15,24.5 L15,29.5" stroke="#666" stroke-width="0.5" />
-                    <path d="M13,28 L17,26" stroke="#666" stroke-width="0.5" />
-                    <path d="M13,26 L17,28" stroke="#666" stroke-width="0.5" />
-                </svg>
-            </div>
-        </div>
-
-        <!-- صفحة المفاجأة -->
-        <div id="surprise-screen">
-            <div class="moon"></div>
-            <div class="stars" id="stars-container"></div>
-            
-            <div class="surprise-text" id="celebration-text">
-                <h1>كل عام وأنتِ بخير يا ام عبدو 💖🎂</h1>
-                <p>أتمنى لكِ سنة مليئة بالسعادة والحب والنجاح ✨</p>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
